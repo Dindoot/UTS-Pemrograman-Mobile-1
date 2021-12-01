@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text('Lawang Sewu',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ),
               Text('Semarang, Jawa Tengah',
-                  style: TextStyle(color: Colors.grey[600], fontSize: 15))
+                  style: TextStyle(fontSize: 15))
             ],
           )),
           FavoriteWidget()
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    Color color = Theme.of(context).primaryColorDark;
+    Color color = Theme.of(context).primaryColor;
 
     Widget nahiaIcon = Container(
       child: Row(
@@ -53,6 +53,8 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Dindoot',
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       home: Scaffold(
           appBar: AppBar(
               backgroundColor: Colors.teal[400],
