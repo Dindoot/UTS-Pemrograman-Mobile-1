@@ -15,5 +15,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# Demo Apk Download Disini
-[![SetGD](https://te.legra.ph/file/d6a9a14032b364cd09a7f.png)](https://github.com/Dindoot/mobile_project/releases/tag/v1)
+# Demo Apk [Download Disini](https://github.com/Dindoot/mobile_project/releases/tag/v1)
