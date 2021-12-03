@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text('Lawang Sewu',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ),
-              Text('Semarang, Jawa Tengah',
-                  style: TextStyle(fontSize: 15))
+              Text('Semarang, Jawa Tengah', style: TextStyle(fontSize: 15))
             ],
           )),
           FavoriteWidget()
@@ -89,21 +89,21 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class FavoriteWidget extends StatefulWidget{
+class FavoriteWidget extends StatefulWidget {
   @override
   _FavoriteWidgetState createState() => _FavoriteWidgetState();
 }
 
-class _FavoriteWidgetState extends State<FavoriteWidget>{
+class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited = true;
   int _FavoriteCount = 100;
 
-  void _toggleFavorite(){
+  void _toggleFavorite() {
     setState(() {
-      if(_isFavorited){
+      if (_isFavorited) {
         _FavoriteCount -= 1;
         _isFavorited = false;
-      }else{
+      } else {
         _FavoriteCount += 1;
         _isFavorited = true;
       }
@@ -111,7 +111,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget>{
   }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -120,10 +120,12 @@ class _FavoriteWidgetState extends State<FavoriteWidget>{
           child: IconButton(
             padding: EdgeInsets.all(0),
             alignment: Alignment.centerRight,
-            icon: (_isFavorited ? Icon(Icons.favorite) : Icon(Icons.favorite_border)),
+            icon: (_isFavorited
+                ? Icon(Icons.favorite)
+                : Icon(Icons.favorite_border)),
             color: Colors.pink,
             onPressed: _toggleFavorite,
-        ),
+          ),
         ),
         SizedBox(
           width: 30,
@@ -131,8 +133,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget>{
             child: Text('$_FavoriteCount'),
           ),
         )
-        ],
+      ],
     );
   }
-
 }
